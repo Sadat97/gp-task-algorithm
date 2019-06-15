@@ -59,4 +59,4 @@ module.exports = {
 //Write the test case
 //RUN(/The array   /,/ the size of the resulted array  /,the target    )
 //eg.RUN([1,2,3],6,2)
-console.log(module.exports.RUN([0], 5, 4));
+// console.log(module.exports.RUN([1,2,4,5], 3, 3));
