@@ -51,13 +51,14 @@ module.exports = {
     for (var i = 0; i < arr.length; i++)
       up[i] = arr[i] > 0 ? (N * T) / arr[i] : N;
     
-        var result = ans;
-        ans = [];
-    if (solve(0, N, N * T)) {
-      print(0, N, N * T);
-      return result;
-    } else return [-1];
         
+      var result = -1;
+        if (solve(0, N, N * T)) {
+            print(0, N, N * T);
+            result = ans;
+        }
+        ans = [];
+        return result;
   }
 };
 //Write the test case
